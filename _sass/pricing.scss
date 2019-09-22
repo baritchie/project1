@@ -1,6 +1,7 @@
 .plans {
 	@extend %flexbox;
 	@include flex-flow(wrap);
+	@include align-items(start);
 	padding: 50px 0 30px 0;
 
 	.plan {
