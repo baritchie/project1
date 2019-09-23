@@ -5,18 +5,19 @@
 }
 
 .text-container {
-	max-width: 750px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.hero_image {
     height: 100vh;
     @media #{$desktop} {
         height: 50vh;    
     }
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: url("/uploads/school-main.JPG");
+}
+
+.hero_image {
+
 }
 
 .container {
