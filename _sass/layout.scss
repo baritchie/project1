@@ -9,10 +9,6 @@
     @media #{$desktop} {
         height: 50vh;    
     }
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	background: url("/uploads/school-main.JPG");
 	background-size: cover;
     background-repeat: no-repeat;
