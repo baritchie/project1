@@ -17,7 +17,3 @@
       link: 'https://www.facebook.com/studyabroadFrance/'
       new_window: true
       social_icon: Facebook
-    - name: Email
-      link: 'mailto:summerschoolfrance@gmail.com'
-      social_icon:
-      new_window: true
