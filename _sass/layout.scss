@@ -5,15 +5,7 @@
 }
 
 .text-container {
-    height: 100vh;
-    @media #{$desktop} {
-        height: 50vh;    
-    }
-	background: url("/uploads/school-main.JPG");
-	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    padding: 0;
+
 }
 
 .hero_image {
