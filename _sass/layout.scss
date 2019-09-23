@@ -15,7 +15,10 @@
 }
 
 .hero_image {
-    height: 50vh;
+    height: 100vh;
+    @media #{$desktop} {
+        height: 50vh;    
+    }
 }
 
 .container {
