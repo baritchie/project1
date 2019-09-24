@@ -2,50 +2,6 @@
 title: Other Programs
 heading: Our Other Programs
 description: What we offer that's just a little different!
-pricing_table:
-  - name: Included in Either Trip
-    color: '#646464'
-    features:
-      - text: Airfare from Los Angeles to Paris with the group
-        highlight: false
-      - text: 21 nights accommodation (including 3 nights Paris)
-        highlight: false
-      - text: All tuition and instruction
-        highlight: false
-      - text: 'Breakfast, Lunch, and Dinner (Lunch/Dinner in Paris At Own Expense)'
-        highlight: false
-      - text: Transportation to and from the airport*
-        highlight: false
-      - text: All books and materials for the course
-        highlight: false
-      - text: 'Guest Presentations, Workshops, and Field Trips'
-        highlight: false
-      - text: Laundry Facilities
-        highlight: false
-      - text: >-
-          All cultural and social activities organized by Live and Learn, Inc
-          (including sports, excursions, museum and gallery admissions)
-        highlight: false
-    call_to_action:
-      link: 'http://mysite.com?plan=basic'
-      text: Get started
-  - name: Exceptions
-    color: '#1a1a1a'
-    features:
-      - text: '*Lunch/Dinner in Paris At Own Expense, 3 of each.'
-        highlight: false
-      - text: >-
-          **Transportation is provided from the airport IF you are part of a
-          group arriving together. If you arrive separately, there will be a
-          $250 surcharge.
-        highlight: false
-      - text: >-
-          DOES NOT INCLUDE  PERSONAL EXPENDITURES, SUCH AS SNACKS, SOUVENIRS,
-          AND SO ON.
-        highlight: false
-    call_to_action:
-      link: /contact/
-      text: Questions? Contact us.
 faq:
   - question: What types of payment do you accept?
     answer: 'Credit cards including MasterCard, Visa or American Express.'
@@ -57,21 +13,9 @@ faq:
     answer: 'Contact us for any further questions at <a href="#">john@business.com</a>.'
 ---
 
-<div class="plans">
-	{% for plan in page.pricing_table %}
-		<ul class="plan">
-			<li style="background: {{ plan.color }}">
-				<h3>{{ plan.name }}</h3>
-			</li>
-			{% for feature in plan.features %}
-				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}</li>
-			{% endfor %}
-
-			{% if plan.call_to_action %}
-				<li class="pricing-cta"><div class="button"><a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
-			{% endif %}
-		</ul>
-	{% endfor %}
+<div class="otherprograms">
+    <p>Why not think of joining a small group of high schoolers for a 10 night  visit to France. Three glorious days in Paris, and 7 in the idyllic countryside of lower Normandy. Visit the Loire Valley, D Day beaches, loads of châteaux (medieval and Renaissance) , Roman ruins, Renaissance art and architecture, museums, school, farm, shopping, and on and on.The 7 days in the countryside will be in an 18th century mansion.</p>
+    <p>The cost is $1950 PLUS airfare, and this covers about everything: all accommodation (including three nights in Paris), all transportation within France; all meals (except Paris…to allow choice), all entrance fees into sites; and travel insurance.</p>
 </div>
 
 {% if page.faq %}
