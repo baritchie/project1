@@ -3,7 +3,7 @@
 }
 .whoweare .image {
     max-width: 100%;
-    @media ($desktop) {
+    @media #{$desktop} {
         max-width: 65%;
     }
 }
