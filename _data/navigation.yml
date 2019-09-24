@@ -2,6 +2,10 @@
   link: /summerschoolprograms/
   new_window: false
   highlight: false
+- name: Other Programs
+  link: /otherprograms/
+  new_window: false
+  highlight: true
 - name: Who Are We?
   link: /whoweare/
   new_window: false
