@@ -1,9 +1,9 @@
 .whoarewe {
     padding: 50px 0 50px 0;
-}
-.whoweare img {
-    max-width: 100%;
-    @media #{$desktop} {
-        max-width: 65%;
+    img {
+        max-width: 100%;
+        @media #{$desktop} {
+            max-width: 65%;
+        }
     }
 }
