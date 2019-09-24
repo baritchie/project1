@@ -1,11 +1,12 @@
 ---
-title: The Gallery
+title: Gallery
 heading: Some Photos of our Adventures
 description: Here's What to Expect on our Programs!
 images:
-  - image_path: 
-    title: 
+  - image_path:
+    title:
 ---
+
 <ul class="photo-gallery">
   {% for image in page.images %}
     <li><img src="{{ image.image_path }}" alt="{{ image.title }}"/></li>
