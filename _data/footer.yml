@@ -1,17 +1,15 @@
 - links:
-    - name: Pricing
-      link: /pricing/
+    - name: Summer School
+      link: 'https://summerschoolfrance.com/summerschoolprograms/'
+      new_window: true
+    - name: Spring Tours
+      link: 'https://summerschoolfrance.com/otherprograms/'
+      new_window: true
+- links:
     - name: Who Are We?
       link: /whoweare/
     - name: Contact
       link: /contact/
-- links:
-    - name: Summer School
-      link: /summerschool/
-      new_window: true
-    - name: Personalized Tours
-      link: /tours/
-      new_window: true
 - links:
     - name: Facebook
       link: 'https://www.facebook.com/studyabroadFrance/'
