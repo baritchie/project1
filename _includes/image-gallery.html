@@ -47,7 +47,7 @@
                 {% assign filename = filenameparts | last | replace: file.extname,"" %}
                 <a href="{{ file.path }}" title="{{ filename }}">
                     <div class="gallery-item">
-                        <img class="gallery-image" src="https://ahechdcldm.cloudimg.io/crop/200x200/x/{{ site.url }}{{ file.path }}" alt="{{ filename }}" title="{{ filename }}" />
+                        <img class="gallery-image" src="https://ahechdcldm.cloudimg.io/crop/200x200/x/{{ site.url | replace: 'http://','' | replace: 'https://',''}}{{ file.path }}" alt="{{ filename }}" title="{{ filename }}" />
                     </div>
                 </a>
             {% endif %}
