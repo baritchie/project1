@@ -1,4 +1,4 @@
-<div id="image-gallery-jpg">
+<div id="image-gallery-webp">
     <div class="image-gallery">
         {% for file in site.static_files %}
             {% if file.path contains include.folder %}
@@ -15,7 +15,7 @@
         {% endfor %}
     </div>
 </div>
-<div id="image-gallery-webp">
+<div id="image-gallery-jpg">
     <div class="image-gallery">
         {% for file in site.static_files %}
             {% if file.path contains include.folder %}
