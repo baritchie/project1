@@ -27,6 +27,16 @@
         <meta name="theme-color" content="#ffffff">
         <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="{{ site.url }}/js/modernizr-custom.js"></script>
+        <script>
+          Modernizr.on('webp', function (result) {
+            if (result) {
+              // supported
+            } else {
+              // not-supported
+            }
+          });
+        </script>
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
 			<script>
 				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -70,16 +80,6 @@
 				return false;
 			};
 		</script>
-		<script src="{{ site.url }}/js/modernizr-custom.js"></script>
-		<script>
-          Modernizr.on('webp', function (result) {
-            if (result) {
-              // supported
-            } else {
-              // not-supported
-            }
-          });
-        </script>
 		{% include lightbox.html %}
 	</body>
 </html>
