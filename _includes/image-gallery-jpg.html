@@ -1,4 +1,5 @@
-        {% for file in site.static_files %}
+<div class="image-gallery">
+          {% for file in site.static_files %}
             {% if file.path contains include.folder %}
                 {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname == '.JPEG' %}
                     {% assign filenameparts = file.path | split: "/" %}
@@ -10,4 +11,5 @@
                     </a>
                 {% endif %}
             {% endif %}
-        {% endfor %}
+        {% endfor %}  
+</div>  
