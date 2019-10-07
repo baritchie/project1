@@ -1,6 +1,9 @@
+<div id="image-gallery-set">
+    
+</div>
 <script>
   if($('html').hasClass('webp')){
-   $('image-gallery-set').append('<div class="image-gallery">
+   $('#image-gallery-set').append('<div class="image-gallery">
                         {% for file in site.static_files %}
                         {% if file.path contains include.folder %}
                             {% if file.extname == '.webp' or file.extname == '.WEBP' %}
@@ -17,7 +20,7 @@
             </div>
     ');
 } else {
-   $('image-gallery-set').append('<div class="image-gallery">
+   $('#image-gallery-set').append('<div class="image-gallery">
                         {% for file in site.static_files %}
                         {% if file.path contains include.folder %}
                             {% if file.extname == '.jpg' or file.extname == '.JPG' %}
