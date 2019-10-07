@@ -3,7 +3,7 @@
 </div>
 <script>
     if (document.querySelector('.webp') !== null) {
-        document.getElementsByClassName("set-image-gallery").innerHTML('{% include image-gallery-webp.html %}');
+        document.getElementsByClassName("set-image-gallery").innerHTML("{% include image-gallery-webp.html %}");
     }
     else {
         document.getElementsByClassName("set-image-gallery").innerHTML("{% include image-gallery-jpg.html %}");
