@@ -1,8 +1,11 @@
+<div class="set-image-gallery">
+        
+</div>
 <script>
     if (document.querySelector('.webp') !== null) {
-        document.innerHTML("{% include image-gallery-webp.html %}");
+        document.getElementsByClassName("set-image-gallery").innerHTML("{% include image-gallery-webp.html %}");
     }
     else {
-        document.innerHTML("{% include image-gallery-jpg.html %}");
+        document.getElementsByClassName("set-image-gallery").innerHTML("{% include image-gallery-jpg.html %}");
     }
 </script>
