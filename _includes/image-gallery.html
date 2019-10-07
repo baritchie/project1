@@ -1,4 +1,24 @@
 <div class="image-gallery">
+    <script>
+        if (document.querySelector('.mydivclass') !== null) {
+    </script>
+    {% for file in site.static_files %}
+        {% if file.path contains include.folder %}
+            {% if file.extname == '.webp' or file.extname == '.WEBP' %}
+                {% assign filenameparts = file.path | split: "/" %}
+                {% assign filename = filenameparts | last | replace: file.extname,"" %}
+                <a href="{{ file.path }}" title="{{ filename }}">
+                    <div class="gallery-item">
+                        <img class="gallery-image" src="https://ahechdcldm.cloudimg.io/crop/200x200/webp/{{ site.url | replace: 'https://','http://' }}{{ file.path }}" alt="{{ filename }}" title="{{ filename }}" />
+                    </div>
+                </a>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    <script>
+        }
+        else {
+    </script>
     {% for file in site.static_files %}
         {% if file.path contains include.folder %}
             {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname == '.JPEG' %}
@@ -12,4 +32,7 @@
             {% endif %}
         {% endif %}
     {% endfor %}
+    <script>
+        }
+    </script>
 </div>
