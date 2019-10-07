@@ -44,8 +44,9 @@
 	}
 }
 
-.hero::after {
+.no-webp .hero::after {
     content: "";
+    background: url("/uploads/cover.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 30%;
@@ -55,16 +56,22 @@
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;      
-}
-
-
-.no-webp .hero::after {
-    background: url("/uploads/cover.jpg");
+    z-index: -1;   
 }
 
 .webp .hero::after {
+    content: "";
     background: url("/uploads/cover.webp");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
 }
 
 @media #{$desktop} {
