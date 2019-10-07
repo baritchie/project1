@@ -1,11 +1,13 @@
-<div class="set-image-gallery">
+<div id="set-image-gallery">
         
 </div>
-<script>
-    if (document.querySelector('.webp') !== null) {
-        document.getElementsByClassName("set-image-gallery").innerHTML("{% include image-gallery-webp.html %}");
-    }
-    else {
-        document.getElementsByClassName("set-image-gallery").innerHTML("{% include image-gallery-jpg.html %}");
-    }
-</script>
+    <script> 
+    $(document).ready(function() { 
+        if($("html").hasClass("webp")){
+            $("#set-image-gallery").load("image-gallery-webp.html");
+        }
+        else {
+            $("#set-image-gallery").load("image-gallery-jpg.html")
+        }
+    });
+</script> 
