@@ -35,9 +35,9 @@
 
 <script>
     if (document.querySelector('.webp') !== null) {
-        document.getElementById('image-gallery-webp').style.display='none';
+        document.innerHTML("{% include image-gallery-webp.html %}")
     }
     else {
-        document.getElementById('image-gallery-jpg').style.display='none';
+        document.innerHTML("{% include image-gallery-jpg.html %}")
     }
 </script>
