@@ -50,7 +50,7 @@
 }
 
 .courses {
-    dl {
+    div {
         @extend %flexbox;
         @include flex-flow(column wrap);
         @media #{desktop} {
