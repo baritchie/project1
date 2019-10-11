@@ -53,12 +53,15 @@
 	@extend %flexbox;
 	@include flex-flow(wrap);
 	@include align-items(flex-start);
+	width: 100%;
 	div {
-	    width: 100%;
 		margin: 0 10px 50px 10px;
 	    @media #{$desktop} {
 	        -webkit-flex: 1;
 	        flex: 1;
+	    }
+	    h3 {
+	        
 	    }
 	}
 }
