@@ -50,10 +50,10 @@
 }
 
 .courses {
-    @extend %flexbox;
-    @include flex-flow(column wrap);
-    
-    
+    dl {
+        @extend %flexbox;
+        @include flex-flow(column wrap);
+    }
 }
 
 .faq {
