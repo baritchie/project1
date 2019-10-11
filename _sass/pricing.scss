@@ -57,6 +57,14 @@
         break-inside: avoid;
         padding: 25px 0;
     }
+    dt {
+        font-weight: bold;
+        margin: 0 0 5px 0;
+    }
+    dd {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .faq {
