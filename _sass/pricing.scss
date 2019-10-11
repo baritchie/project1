@@ -50,13 +50,11 @@
 }
 
 .courses {
-    @extend %flexbox;
-    @include flex-flow(wrap);
-    @include align-items(center);
-    h3 {
-        text-align: center;
-        @extend %flexbox;
-        @include align-self(flex-start);
+    @media #{$desktop} {
+        @include columns(2);
+    }
+    div {
+        break-inside: avoid;
     }
 }
 
