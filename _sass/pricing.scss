@@ -50,18 +50,15 @@
 }
 
 .courses {
-        @extend %flexbox;
-        @include flex-flow(column wrap);
-        @media #{desktop} {
-            -webkit-flex: 1;
-            flex: 1;
-        }
-        h3 {
-            align-items: flex-start;
-        }
-        p {
-            align-items: center;
-        }
+	@extend %flexbox;
+	@include flex-flow(wrap);
+	@include align-items(flex-start);
+	div {
+	    @media #{$desktop} {
+	        -webkit-flex: 1;
+	        flex: 1;
+	    }
+	}
 }
 
 .faq {
