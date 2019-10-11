@@ -49,6 +49,15 @@
 	}
 }
 
+.courses {
+    @extend %flexbox;
+    @include flex-flow(wrap);
+    @include align-items(center);
+    h3 {
+        text-align: center;
+    }
+}
+
 .faq {
 	@media #{$desktop} {
 		@include columns(2);
