@@ -50,12 +50,18 @@
 }
 
 .courses {
-        @extend %flexbox;
-        @include flex-flow(column wrap);
+    @extend %flexbox;
+    @include flex-flow(column wrap);
+    @media #{desktop} {
+        -webkit-flex: 1;
+        flex: 1;
+    }
+    div {
         @media #{desktop} {
             -webkit-flex: 1;
             flex: 1;
         }
+    }
 }
 
 .faq {
