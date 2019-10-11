@@ -5,7 +5,7 @@
 		display: block;
 	}
 
-	@media #{$desktop} {
+	@media #{$mid-point} {
 		border: 0;
 		padding: 0 20px;
 
@@ -20,7 +20,7 @@ nav {
 	font-size: .8em;
 	width: 100%;
 
-	@media #{$desktop} {
+	@media #{$mid-point} {
 		text-align: right;
 		position: absolute;
 		top: 13px;
@@ -37,7 +37,7 @@ nav {
 		transition: .2s ease-in-out;
 		display: none;
 
-		@media #{$desktop} {
+		@media #{$mid-point} {
 			display: inline;
 			padding: 10px;
 		}
@@ -51,7 +51,7 @@ nav {
 			font-size: 1.9em;
 			border: 0;
 
-			@media #{$desktop} {
+			@media #{$mid-point} {
 				display: none;
 			}
 
@@ -67,7 +67,7 @@ nav {
 		color: #fff;
 	}
 
-	@media #{$desktop} {
+	@media #{$mid-point} {
 		a.highlight {
 			border: 1px #ccc solid;
 			border-radius: 5px;
