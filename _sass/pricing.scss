@@ -53,6 +53,10 @@
     dl {
         @extend %flexbox;
         @include flex-flow(column wrap);
+        @media #{desktop} {
+            -webkit-flex: 1;
+            flex: 1;
+        }
     }
 }
 
