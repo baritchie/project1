@@ -55,6 +55,8 @@
     @include align-items(center);
     h3 {
         text-align: center;
+        @extend %flexbox;
+        @include align-items(flex-start);
     }
 }
 
