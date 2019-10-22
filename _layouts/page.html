@@ -11,15 +11,24 @@ layout: default
                         <source class="screenshot" srcset="{{ page.picture_url }}.jpg" type="image/jpeg">
                         <img style="height:200px;width:100%;object-fit:cover;object-position: 0 10%;-webkit-filter:brightness(70%);" class="screenshot" src="{{ page.picture_url }}.jpg" />
                     </picture>
-    				<h2>{{ page.heading }}</h2>
-    		    {% elsif page.heading %}
-    		        <h2>{{ page.heading }}</h2>
-    			{% elsif page.title and page.layout != 'archive' %}
-    				<h2>{{ page.title }}</h2>
-    			{% endif %}
-    			{% if page.description %}
-    				<p class="subtext">{{ page.description }}</p>
-    			{% endif %}
+                    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);">
+                        <h2>{{ page.heading }}</h2>
+            				{% if page.description %}
+            					<p class="subtext">{{ page.description }}</p>
+    			            {% endif %}
+                    </div>
+            		    {% elsif page.heading %}
+            		        <h2>{{ page.heading }}</h2>
+            				{% if page.description %}
+            					<p class="subtext">{{ page.description }}</p>
+    			            {% endif %}
+            			{% elsif page.title and page.layout != 'archive' %}
+            				<h2>{{ page.title }}</h2>
+            				{% if page.description %}
+            					<p class="subtext">{{ page.description }}</p>
+    			            {% endif %}
+            				
+            			{% endif %}
 		    </div>
 			{{ content }}
 		</div>
