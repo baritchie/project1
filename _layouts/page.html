@@ -5,6 +5,11 @@ layout: default
 	<section class="page">
 		<div class="container {% if page.full_width %}max-container{% endif %}">
 			{% if page.heading %}
+    			<picture>
+                    <source class="screenshot" srcset="{{ page.picture_url }}.webp" type="image/webp">
+                    <source class="screenshot" srcset="{{ page.picture_url }}.jpg" type="image/jpeg">
+                    <img alt="Autumn Leaves at the School" style="width:50%;" class="screenshot" src="{{ page.picture_url }}.jpg" />
+                </picture>
 				<h2>{{ page.heading }}</h2>
 			{% elsif page.title and page.layout != 'archive' %}
 				<h2>{{ page.title }}</h2>
