@@ -4,21 +4,23 @@ layout: default
 <div class="content">
 	<section class="page">
 		<div class="container {% if page.full_width %}max-container{% endif %}">
-			{% if page.heading and page.picture_url %}
-    			<picture>
-                    <source class="screenshot" srcset="{{ page.picture_url }}.webp" type="image/webp">
-                    <source class="screenshot" srcset="{{ page.picture_url }}.jpg" type="image/jpeg">
-                    <img style="height:200px;width:100%;object-fit:cover;object-position: 0 10%;" class="screenshot" src="{{ page.picture_url }}.jpg" />
-                </picture>
-				<h2>{{ page.heading }}</h2>
-		    {% elsif page.heading %}
-		        <h2>{{ page.heading }}</h2>
-			{% elsif page.title and page.layout != 'archive' %}
-				<h2>{{ page.title }}</h2>
-			{% endif %}
-			{% if page.description %}
-				<p class="subtext">{{ page.description }}</p>
-			{% endif %}
+		    <div style="position:relative;text-align:center;color:white;">
+    			{% if page.heading and page.picture_url %}
+        			<picture>
+                        <source class="screenshot" srcset="{{ page.picture_url }}.webp" type="image/webp">
+                        <source class="screenshot" srcset="{{ page.picture_url }}.jpg" type="image/jpeg">
+                        <img style="height:200px;width:100%;object-fit:cover;object-position: 0 10%;-webkit-filter:brightness(70%);" class="screenshot" src="{{ page.picture_url }}.jpg" />
+                    </picture>
+    				<h2>{{ page.heading }}</h2>
+    		    {% elsif page.heading %}
+    		        <h2>{{ page.heading }}</h2>
+    			{% elsif page.title and page.layout != 'archive' %}
+    				<h2>{{ page.title }}</h2>
+    			{% endif %}
+    			{% if page.description %}
+    				<p class="subtext">{{ page.description }}</p>
+    			{% endif %}
+		    </div>
 			{{ content }}
 		</div>
 	</section>
