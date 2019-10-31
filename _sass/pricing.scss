@@ -69,6 +69,12 @@
 	}
 }
 
+.price_callout {
+    font-size: 2em;
+    text-align: center;
+    color:#1a1a1a;
+}
+
 .faq {
 	@media #{$desktop} {
 		@include columns(2);
