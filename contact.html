@@ -5,9 +5,11 @@ description: Your French journey awaits
 ---
 
 <div class="contact-box">
-	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
+	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form" name="contact" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
 		<input type="hidden" name="_to" value="summerschoolfrance@gmail.com" />
-		<input type="text" name="_gotcha" style="display: none;">
+		<p class="hidden">
+			<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+		</p>
 
 		<label for="name">Full Name</label>
 		<input type="text" name="name" id="name" placeholder="Enter your name..." />
@@ -18,7 +20,7 @@ description: Your French journey awaits
 		<label for="message">Message</label>
 		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
         <br>
-        <div class="g-recaptcha" data-sitekey="6LcyAboUAAAAAAIPAnLoRvW9fTFKuRJOF3sHwmis"></div>
+        <div data-netlify-recaptcha="true"></div>
 
 		<input type="submit" value="Send Message" />
 	</form>
