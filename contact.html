@@ -5,7 +5,7 @@ description: Your French journey awaits
 ---
 
 <div class="contact-box">
-	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form" name="contact" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form" name="contact">
 		<p style="display:none;">
 			<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
 		</p>
@@ -18,10 +18,8 @@ description: Your French journey awaits
 
 		<label for="message">Message</label>
 		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
-        <br>
-        <div data-netlify-recaptcha="true"></div>
-
 		<input type="submit" value="Send Message" />
+		<input type="hidden" name="_to" value="summerschoolfrance@gmail.com">
 	</form>
 
 	<div class="contact-details">
