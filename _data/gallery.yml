@@ -1,2 +1,2 @@
-- image: /uploads/gallery/Dressing Like Your Inner Lord and Lady.jpg
-- image: /uploads/gallery/IMG_1700.jpg
+- images
+  - image_path: /uploads/gallery/Dressing Like Your Inner Lord and Lady.jpg
