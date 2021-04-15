@@ -8,7 +8,7 @@
 <div class="image-gallery">
 {% for image in page.images %}
       <a href="{{ image.image_path }}">
-        <img src="//images.weserv.nl/?url=summerschoolfrance.com/{{ image.image_path }}&w=300&h=300&output=jpg&q=50&t=square" />
+        <img src="//images.weserv.nl/?url=summerschoolfrance.com{{ image.image_path }}&w=300&h=300&output=jpg&q=50&t=square" />
       </a>
 {% endfor %}
 </div>
