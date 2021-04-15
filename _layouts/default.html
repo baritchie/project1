@@ -26,7 +26,6 @@
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
         <script src="{{ site.url }}/js/modernizr-custom.js"></script>
 	</head>
 	<body>
@@ -62,6 +61,7 @@
 				return false;
 			};
 		</script>
-		{% include lightbox.html %}
+		<script type="text/javascript" src="/js/lightbox.js"></script>
+    <link rel="stylesheet" href="/css/lightbox.css">
 	</body>
 </html>
