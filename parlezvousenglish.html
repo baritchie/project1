@@ -2,10 +2,23 @@
 title: Parlez-vous English?
 heading: Nos cours d'anglais comme langue étrangère
 description:
+path_to_brochure: /uploads/french_brochure.pdf
+_inputs:
+    path_to_newsletter:
+        type: document
+
 ---
-<div class="wrap-iframe">
-    <iframe class="wrapped-iframe" src="https://docs.google.com/document/d/e/2PACX-1vQ5DYTU7DfmFAi7Z2igW4Rz0eLBHsKC8ByAxUV_fAJetFxpXMqQlcs214eXvwwWolTc9N7GRSDwDGsX/pub?embedded=true"></iframe>
-</div>
+<div id="adobe-dc-view" style="width: 800px;"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+		var adobeDCView = new AdobeDC.View({clientId: "48d325500ce74bd981d78999c5c6c5cb", divId: "adobe-dc-view"});
+		adobeDCView.previewFile({
+			content:{promise: "{{path_to_brochure}}"},
+			metaData:{fileName: "French Brochure"}
+		}, {embedMode: "IN_LINE"});
+	});
+</script>
 <div class="otherprograms center-text editable">
             	<p>&nbsp;</p>
             	<h1>ATELIERS D'ARTISANAT EN PETIT GROUPE.</h1>
