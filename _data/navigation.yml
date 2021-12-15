@@ -18,3 +18,7 @@
   link: /contact/
   new_window: false
   highlight: true
+- name: Parlez-vous English?
+  link:
+  new_window: false
+  highlight: true
