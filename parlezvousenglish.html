@@ -14,7 +14,7 @@ _inputs:
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
 		var adobeDCView = new AdobeDC.View({clientId: "48d325500ce74bd981d78999c5c6c5cb", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
-			content:{promise: "{{path_to_brochure}}"},
+			content:{promise: "{{page.path_to_brochure}}"},
 			metaData:{fileName: "French Brochure"}
 		}, {embedMode: "IN_LINE"});
 	});
