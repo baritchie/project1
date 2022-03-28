@@ -5,22 +5,47 @@ description: Your French journey awaits
 ---
 
 <div class="contact-box">
-	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form" name="contact">
-		<input type="text" name="_gotcha" style="display: none;">
+    <form
+        action="{{ site.baseurl }}/contact-success/"
+        method="post"
+        class="contact-form"
+        name="contact"
+    >
+        <input type="text" name="_gotcha" style="display: none" />
         <label for="name">Full Name</label>
-		<input type="text" name="name" id="name" placeholder="Enter your name..." />
+        <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name..."
+        />
 
-		<label for="email">Email Address</label>
-		<input type="email" name="_replyto" id="email" placeholder="Enter your email..." required />
+        <label for="email">Email Address</label>
+        <input
+            type="email"
+            name="_replyto"
+            id="email"
+            placeholder="Enter your email..."
+            required
+        />
 
-		<label for="message">Message</label>
-		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
-		<input type="submit" value="Send Message" />
-		<input type="hidden" name="_to" value="summerschoolfrance@gmail.com">
-	</form>
+        <label for="message">Message</label>
+        <textarea
+            name="message"
+            id="message"
+            placeholder="Enter your message..."
+        ></textarea>
 
-	<div class="contact-details">
-		<h3 class="editable">Email</h3>
-		<p><a href="mailto:summerschoolfrance@gmail.com">summerschoolfrance@gmail.com</a></p>
-	</div>
+        <input type="hidden" name="inbox_key" value="summerschoolfrance" />
+        <input type="submit" value="Send Message" />
+    </form>
+
+    <div class="contact-details">
+        <h3 class="editable">Email</h3>
+        <p>
+            <a href="mailto:summerschoolfrance@gmail.com"
+                >summerschoolfrance@gmail.com</a
+            >
+        </p>
+    </div>
 </div>
