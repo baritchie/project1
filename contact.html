@@ -6,12 +6,12 @@ description: Your French journey awaits
 
 <div class="contact-box">
     <form
-        action="{{ site.baseurl }}/contact-success/"
+        action="https://submit-form.com/jK3Yo3rl"
         method="post"
         class="contact-form"
         name="contact"
+        data-botpoison-public-key="pk_228c11e9-85a8-430b-9b9e-f8ef9e8765ab"
     >
-        <input type="text" name="_gotcha" style="display: none" />
         <label for="name">Full Name</label>
         <input
             type="text"
@@ -23,7 +23,7 @@ description: Your French journey awaits
         <label for="email">Email Address</label>
         <input
             type="email"
-            name="_replyto"
+            name="email"
             id="email"
             placeholder="Enter your email..."
             required
@@ -35,12 +35,6 @@ description: Your French journey awaits
             id="message"
             placeholder="Enter your message..."
         ></textarea>
-
-        <input type="hidden" name="inbox_key" value="summerschoolfrance" />
-        <div
-            class="g-recaptcha"
-            data-sitekey="6Lf5fCkfAAAAAFmtARp4YMqZ0J3eudG1lfNQVRf4"
-        ></div>
         <input type="submit" value="Send Message" />
     </form>
 
